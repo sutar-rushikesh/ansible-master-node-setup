@@ -1,1 +1,0 @@
-# ansible-master-node-setup
