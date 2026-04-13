@@ -106,10 +106,10 @@ ansible-master-node-setup/
 ## Inventory Configuration (IMPORTANT)
 
 Correct inventory.ini format:
-
+```bash
 [ec2]
 54.225.13.253 ansible_user=ubuntu ansible_ssh_private_key_file=/root/.ssh/mykey.pem
-
+```
 Rules:
 - Host and variables must be on the SAME LINE
 - Always use ABSOLUTE PATH for SSH key
