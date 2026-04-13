@@ -97,7 +97,7 @@ ansible -m ping <SLAVE_IP>
 ## Repository Structure
 
 ansible-master-node-setup/
-|-- inventory.ini
+<p>|-- inventory.ini<p/>
 |-- install_nginx.yml 
 |-- create_ec2.yml      
 
