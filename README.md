@@ -64,6 +64,8 @@ ansible --version
 ## 📁 Step 3: Create Ansible Directory
 ```bash
 mkdir -p /etc/ansible
+```
+```bash
 touch /etc/ansible/hosts
 ```
 
