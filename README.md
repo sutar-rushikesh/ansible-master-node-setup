@@ -32,9 +32,17 @@ Communication: SSH (port 22)
 Ansible requires Python.
 ```bash
 sudo -i
+```
+```bash
 apt update
+```
+```bash
 apt install python3 -y
+```
+```bash
 apt install python-is-python3 -y
+```
+```bash
 python --version
 ```
 
