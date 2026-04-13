@@ -184,6 +184,24 @@ ansible all -i inventory.ini -m shell -a "apt update -y" -b
 ```
 <img width="1920" height="356" alt="image" src="https://github.com/user-attachments/assets/e6b9bcee-70bd-4bf2-8380-c2aaa675d9ff" />
 
+To Copy File from master to node 
+```bash
+ansible all -m copy -a "src=/etc/ansible/hosts dest=/var"
+```
+<img width="1920" height="462" alt="image" src="https://github.com/user-attachments/assets/e7f454d7-9531-4fad-b155-a306d1ede7c5" />
+
+Install or update Git to the latest version on all servers using sudo.
+```bash
+ansible all -m apt -a "name=git state=latest" -b
+```
+<img width="1920" height="247" alt="image" src="https://github.com/user-attachments/assets/4fcb48a6-0ecf-414f-80b8-212a6118b72c" />
+
+Run ls -lrt / on all servers and display the root directory contents.
+```bash
+ansible all -m shell -a "ls -lrt /" 
+```
+<img width="1917" height="668" alt="image" src="https://github.com/user-attachments/assets/977f5993-dfd2-4529-849b-067df907e500" />
+
 --------------------------------------------------
 
 ## Install NGINX Using Playbook
