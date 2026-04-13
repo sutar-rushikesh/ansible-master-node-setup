@@ -51,7 +51,11 @@ python --version
 ## 📦 Step 2: Install Ansible
 ```bash
 apt update
+```
+```bash
 apt install ansible -y
+```
+```bash
 ansible --version
 ```
 
