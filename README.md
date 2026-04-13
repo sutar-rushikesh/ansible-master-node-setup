@@ -121,7 +121,7 @@ ansible-master-node-setup/
 Correct inventory.ini format:
 ```bash
 [ec2]
-54.225.13.253 ansible_user=ubuntu ansible_ssh_private_key_file=/root/.ssh/mykey.pem
+<NODE_IP> ansible_user=ubuntu ansible_ssh_private_key_file=/root/.ssh/mykey.pem
 ```
 Rules:
 - Host and variables must be on the SAME LINE
@@ -144,7 +144,7 @@ chmod 400 /root/.ssh/mykey.pem
 ```
 ### Step 3: Verify SSH manually
 ```bash
-ssh -i /root/.ssh/mykey.pem ubuntu@54.225.13.253
+ssh -i /root/.ssh/mykey.pem ubuntu@<NODE_IP>
 ```
 If this works, Ansible will work.
 
@@ -156,7 +156,7 @@ ansible -i inventory.ini all -m ping
 ```
 Expected output:
 ```bash
-54.225.13.253 | SUCCESS => {
+<NODE_IP> | SUCCESS => {
   "ping": "pong"
 }
 ```
