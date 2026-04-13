@@ -137,6 +137,8 @@ Rules:
 ```bash
 scp -i mykey.pem mykey.pem root@<ANSIBLE-MASTER-IP>:/root/.ssh/
 ```
+or create file vim mykey.pem in /root/.ssh
+
 ### Step 2: Set correct permissions
 ```bash
 chmod 400 /root/.ssh/mykey.pem
