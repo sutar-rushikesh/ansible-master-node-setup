@@ -182,6 +182,8 @@ Update packages:
 ```bash
 ansible all -i inventory.ini -m shell -a "apt update -y"
 ```
+<img width="1920" height="356" alt="image" src="https://github.com/user-attachments/assets/e6b9bcee-70bd-4bf2-8380-c2aaa675d9ff" />
+
 --------------------------------------------------
 
 ## Install NGINX Using Playbook
