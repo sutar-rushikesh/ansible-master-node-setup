@@ -114,7 +114,7 @@ ansible-master-node-setup/
 <p>|-- inventory.ini <p/>
 <p>|-- install_nginx.yml <p/>
 <p>|-- create_ec2.yml    <p/>  
-
+<p>|-- mykey.pem   <p/>  
 --------------------------------------------------
 
 ## Inventory Configuration (IMPORTANT)
