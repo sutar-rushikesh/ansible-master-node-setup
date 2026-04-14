@@ -294,13 +294,12 @@ Set up your AWS credentials:
 aws configure
 ```
 You’ll need to provide:
-```
+<p?
 Access Key ID
 Secret Access Key
 Default region (e.g., us-east-1)
-Output format (e.g., json, text, or table)
+Output format (e.g., json, text, or table) <p/>
 ```
-```bash
 ```
 ### Playbook: create_ec2.yml
 ```bash
