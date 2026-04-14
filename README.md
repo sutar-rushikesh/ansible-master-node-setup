@@ -247,8 +247,60 @@ ansible-playbook -i inventory.ini install_nginx.yml
 
 ### Prerequisites
 ```bash
+apt install python3-pip
+```
+```bash
 pip3 install boto3 botocore
+```
+To install the AWS CLI (Command Line Interface) on Ubuntu, follow these steps:
+
+1. Update the Package Index
+Run the following command to ensure your package list is up-to-date:
+```bash
+sudo apt update
+```
+2. Install Dependencies
+Ensure you have the necessary dependencies installed:
+```bash
+sudo apt install -y unzip curl
+```
+3. Download the AWS CLI Installer
+Use curl to download the AWS CLI v2 installer:
+```bash
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+```
+4. Extract the Installer
+Unzip the downloaded file:
+```bash
+unzip awscliv2.zip
+```
+5. Run the Installer
+Run the installation script:
+```bash
+sudo ./aws/install
+```
+6. Verify the Installation
+Confirm that the AWS CLI is installed and check its version:
+```bash
+aws --version
+```
+You should see output similar to:
+
+aws-cli/2.x.x Python/x.x.x Linux/x.x.x
+
+7. Configure the AWS CLI
+Set up your AWS credentials:
+```bash
 aws configure
+```
+You’ll need to provide:
+```
+Access Key ID
+Secret Access Key
+Default region (e.g., us-east-1)
+Output format (e.g., json, text, or table)
+```
+```bash
 ```
 ### Playbook: create_ec2.yml
 ```bash
@@ -285,6 +337,8 @@ Run playbook:
 ```bash
 ansible-playbook create_ec2.yml
 ```
+<img width="1919" height="880" alt="Screenshot 2026-04-14 101924" src="https://github.com/user-attachments/assets/71af98f0-27e3-4a0e-9a76-0acda3dead8d" />
+
 --------------------------------------------------
 
 ## Troubleshooting
