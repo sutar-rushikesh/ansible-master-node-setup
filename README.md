@@ -298,7 +298,7 @@ You’ll need to provide:
 Access Key ID
 Secret Access Key
 Default region (e.g., us-east-1)
-Output format (e.g., json, text, or table) <p/>
+Output format (e.g., json, text, or table) 
 ````
 ### Playbook: create_ec2.yml
 ```bash
