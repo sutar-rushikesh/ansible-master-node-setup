@@ -338,6 +338,7 @@ Run playbook:
 ansible-playbook create_ec2.yml
 ```
 <img width="1919" height="880" alt="Screenshot 2026-04-14 101924" src="https://github.com/user-attachments/assets/71af98f0-27e3-4a0e-9a76-0acda3dead8d" />
+<img width="1914" height="862" alt="Screenshot 2026-04-14 101950" src="https://github.com/user-attachments/assets/87508ef1-4023-4a5d-97cb-e0ef689c59ea" />
 
 --------------------------------------------------
 
